@@ -17,9 +17,11 @@ app.use(cookieParser());
 
 //connect to mangoDB
 const dbURI = 'mongodb://admin:bbaef5af5242f5a3206bc93bf83a69a480637b4e7fdc090d@46.101.22.107:27017/imo?authSource=admin';
+mangoose.set('strictQuery', true);
 mangoose.connect(dbURI,{useNewUrlParser:true, useUnifiedTopology:true })
 .then((result)=>console.log('Connected to the System -> http://localhost:3000/'))
 .catch((err)=>console.log(err));
+
 
 
 app.set('view engine','ejs');
@@ -27,6 +29,7 @@ app.listen(3000);
         
 //middleware with static files
 app.use(express.static('public'));
+app.use(express.static('assets'));
 app.use((express.urlencoded({extended : true})));
 app.use(methodOverride('_method'))
 
