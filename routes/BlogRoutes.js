@@ -3,7 +3,7 @@ const BlogController = require('../controllers/BlogController')
 const router = express.Router();
 const {requireAuth} = require('../middleware/authMiddleware');
  
-   router.get('/',requireAuth,BlogController.blog_index);
+   router.get('/',BlogController.blog_index);
    
    router.get('/single-blog/:id',requireAuth,BlogController.single_blog);
 
