@@ -4,6 +4,7 @@ const mangoose = require('mongoose');
 const AuthRoutes = require('./routes/AuthRoutes');
 const cookieParser = require('cookie-parser');
 const BlogRoutes = require('./routes/BlogRoutes')
+const CommuneRoutes = require('./routes/CommuneRoutes')
 const WebRoutes = require('./routes/web')
 const methodOverride = require('method-override');
 const {requireAuth, checkUser} = require('./middleware/authMiddleware');
@@ -44,6 +45,9 @@ app.use(AuthRoutes);
 
 //Blog Routes
 app.use(BlogRoutes);
+
+//Communes Routes
+app.use(CommuneRoutes);
 
 //Web Routes
 app.use(WebRoutes);

@@ -3350,13 +3350,13 @@
 											<input type="hidden" />
 											<!--end::Hidden input-->
 											<!--begin::Icon-->
-											<!-- JTA: remove hidden here--> <i  class="ki-duotone ki-magnifier search-icon fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-5">
+											<!-- JTA: remove hidden here--> <i hidden  class="ki-duotone ki-magnifier search-icon fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-5">
 												<span class="path1"></span>
 												<span class="path2"></span>
 											</i>
 											<!--end::Icon-->
 											<!--begin::Input-->
-											<!-- JTA: remove hidden here--><input  type="text" class="search-input form-control form-control-solid ps-13" name="search" value="" placeholder="Recherche ..." data-kt-search-element="input" />
+											<!-- JTA: remove hidden here--><input hidden type="text" class="search-input form-control form-control-solid ps-13" name="search" value="" placeholder="Recherche ..." data-kt-search-element="input" />
 											<!--end::Input-->
 											<!--begin::Spinner-->
 											<span class="search-spinner position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5" data-kt-search-element="spinner">
@@ -4277,19 +4277,20 @@
 					<!--begin::Container-->
 					<div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-fluid">
 						<!--begin::Post-->
-						<div class="content flex-row-fluid container-fluid" id="kt_content">
-							<br>
+						<div class="content flex-row-fluid contanier-fluid" id="kt_content">
+
 							<!--begin::Row-->
 							<!--JTA MAIN Content-->
 
-								<div class="row gx-6 gx-xl-9">	
+								<div hidden class="row gx-5 gx-xl-8">	
+									<div class="col-xl-12">
 									<div class="card card-flush h-lg-100">
 										<!--begin::Card header-->
 										<div class="card-header mt-1">
 											<!--begin::Card title-->
 											<div class="card-title flex-column">
 												<h3 class="fw-bold mb-1">Modifications</h3>
-												<div class="fs-6 fw-semibold text-gray-500">XX durant les 30 derniers jours</div>
+												<div class="fs-6 fw-semibold text-gray-500">Durant les 30 derniers jours</div>
 											</div>
 											<!--end::Card title-->
 											<!--begin::Card toolbar-->
@@ -4299,7 +4300,7 @@
 											<!--end::Card toolbar-->
 										</div>
 										<!--end::Card header-->	
-										<div class="card-body p-1 pt-1">
+										<div class="card-body p-5 pt-1" >
 										<!--begin::Wrapper slider-->
 										<div class="app-header-slider d-flex flex-stack h-100">
 											<!--begin::Slider button-->
@@ -4311,244 +4312,7 @@
 											<div class="tns tns-fit w-100">
 												<!--begin::Slider-->
 												<div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true" data-tns-autoplay-timeout="10000" data-tns-controls="true" data-tns-nav="false" data-tns-items="1" data-tns-gutter="0" data-tns-responsive="{470: {items: 2}, 670: {items: 3, gutter: 15}, 992: {items: 5, gutter: 20}, 1300: {items: 6, gutter: 40}}" data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_app_header_slider_prev" data-tns-next-button="#kt_app_header_slider_next">
-													<!--begin::Item-->
-													<a href="pages/social/feeds.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #6441A5">
-																<img src="media/svg/brand-logos/twitch-2.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Twitch Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">4 active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/activity.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #E34984">
-																<img src="media/svg/brand-logos/dribbble-2.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Dribbble Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">1 active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/feeds.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #00BF6D">
-																<img src="media/svg/brand-logos/gab.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Gab Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">no active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/followers.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #001935">
-																<img src="media/svg/brand-logos/tumblr.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Tumblr Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">3 active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/feeds.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #E60000">
-																<img src="media/svg/brand-logos/youtube-2.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Youtube Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">28 active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/settings.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #0B66C3">
-																<img src="media/svg/brand-logos/linkedin-3.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">LinkedIn Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">no active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/feeds.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #001935">
-																<img src="media/svg/brand-logos/tumblr.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Tumblr Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">3 active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/feeds.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #00BF6D">
-																<img src="media/svg/brand-logos/gab.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Gab Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">no active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/followers.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #001935">
-																<img src="media/svg/brand-logos/tumblr.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Tumblr Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">3 active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/feeds.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #E60000">
-																<img src="media/svg/brand-logos/youtube-2.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Youtube Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">28 active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/activity.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #E34984">
-																<img src="media/svg/brand-logos/dribbble-2.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Dribbble Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">1 active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/feeds.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #2682ff">
-																<img src="media/svg/brand-logos/eolic-energy.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Eolic Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">no active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/followers.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #cfe2ff">
-																<img src="media/svg/brand-logos/vimeo.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Vimeo Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">3 active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<a href="pages/social/feeds.html" class="parent-hover cursor-pointer d-flex align-items-center flex-md-row-fluid py-lg-2 px-0">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-35px symbol-lg-40px me-3">
-															<span class="symbol-label rounded-4" style="background-color: #f1aeb5">
-																<img src="media/svg/brand-logos/foursquare.svg" class="mw-25px" alt="" />
-															</span>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Info-->
-														<div class="d-flex justify-content-center flex-column">
-															<span class="fw-bold text-gray-800 parent-hover-primary fs-5 mb-1">Foursquare Ads</span>
-															<span class="text-gray-500 fw-semibold d-block fs-7">5 active campaings</span>
-														</div>
-														<!--end::Info-->
-													</a>
-													<!--end::Item-->
+													<%- include('./partials/slider_small_commune.ejs', {i_communes: communes})  %>
 												</div>
 												<!--end::Slider-->
 											</div>
@@ -4562,11 +4326,58 @@
 										<!--end::Wrapper slider-->
 									</div>
 									</div>
+									</div>
 								</div>
 
 								
 
 							<!--end::Row-->
+
+							<!--begin::Row-->
+							<div class="row gx-5 gx-xl-8">
+								<!--<div class="row gx-5 gx-xl-8" style="margin-top: 2rem;">-->
+									<div class="col-xxl-4 col-md-6">
+									<!--begin::List Widget 9-->
+									<div class="card card-xl-stretch mb-5 mb-xl-8">
+										<!--begin::Header-->
+										<div class="card-header align-items-center border-0 mt-3">
+											<h3 class="card-title align-items-start flex-column">
+												<span class="fw-bold text-gray-900 fs-3">Village</span>
+												<span class="text-gray-500 mt-2 fw-semibold fs-6"><%= nb_communes_village %> villes avec moins de 2000 habitants</span>
+											</h3>
+										</div>
+										<!--end::Header-->
+										<!--begin::Body-->
+										<div class="card-body pt-8">
+											<%- include('./partials/widget_9_item.ejs', {i_communes: communes_village})  %>
+										</div>
+										<!--end::Body-->
+									</div>
+									<!--end::List Widget 9-->
+								</div>
+								<div class="col-xxl-4 col-md-6">
+									<!--begin::List Widget 9-->
+									<div class="card card-xl-stretch mb-5 mb-xl-8">
+										<!--begin::Header-->
+										<div class="card-header align-items-center border-0 mt-3">
+											<h3 class="card-title align-items-start flex-column">
+												<span class="fw-bold text-gray-900 fs-3">Hameau / Lieu-dit</span>
+												<span class="text-gray-500 mt-2 fw-semibold fs-6"><%= nb_communes_tpv %> villes avec moins de 500 habitants</span>
+											</h3>
+										</div>
+										<!--end::Header-->
+										<!--begin::Body-->
+										<div class="card-body pt-8">
+											<%- include('./partials/widget_9_item.ejs', {i_communes: communes_tpv})  %>
+										</div>
+										<!--end::Body-->
+									</div>
+									<!--end::List Widget 9-->
+								</div>
+
+							</div>
+							<!--end::Row-->
+
 						</div>
 						<!--end::Post-->
 					</div>

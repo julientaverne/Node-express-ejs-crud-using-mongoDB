@@ -1,9 +1,11 @@
 const express = require('express');
-const BlogController = require('../controllers/BlogController')
+const CommuneController = require('../controllers/CommuneController')
 const router = express.Router();
 const {requireAuth} = require('../middleware/authMiddleware');
  
-   //router.get('/',BlogController.blog_index);
+  router.get('/',CommuneController.get_last_communes);
+/*
+   router.get('/',BlogController.blog_index);
    
    router.get('/single-blog/:id',requireAuth,BlogController.single_blog);
 
@@ -15,6 +17,7 @@ const {requireAuth} = require('../middleware/authMiddleware');
    router.put('/update-blog/:id',requireAuth,BlogController.update_blog);
   
    router.delete('/delete-blog/:id',requireAuth,BlogController.delete_blog);
+   */
    
    
  module.exports = router;
