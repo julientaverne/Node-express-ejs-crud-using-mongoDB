@@ -33,9 +33,12 @@ const communeSchema = new Schema({
     dep_nom :{
         type : String,
         required : true
-    }
-    ,
+    },
     dep_code :{
+        type : String,
+        required : true
+    },
+    presentation :{
         type : String,
         required : true
     }

@@ -42,6 +42,21 @@ const get_last_communes = async (req,res)=>{
 
 }
 
+const get_details = async (req,res)=>{
+   try {
+      const cp = req.params.cp;
+      const nom = req.params.nom;
+
+      let result = await Commune.findOne({ nom_standard: nom, annee: 2025, code_postal: cp })
+
+      res.render('commune_details',{title:'get_commune_details', commune: result});
+  
+    } catch (error) {
+      console.log(error)
+    }
+
+}
+
 /*
 const blog_index = (req,res)=>{
     Blog.find()
@@ -115,7 +130,8 @@ const delete_blog = (req,res)=>{
  */
 
 module.exports = {
-   get_last_communes
+   get_last_communes,
+   get_details
    /*
     blog_index,
     single_blog,
