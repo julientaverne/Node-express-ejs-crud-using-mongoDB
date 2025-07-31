@@ -1,4 +1,4 @@
-<%- include('./partials/zi_header.ejs', {i_menu_accordion: menu_accordion})  %> 
+<%- include('./partials/zi_header.ejs')  %> 
 
 							<!--begin::Row-->
 							<!--JTA MAIN Content-->
@@ -33,7 +33,7 @@
 											<div class="tns tns-fit w-100">
 												<!--begin::Slider-->
 												<div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true" data-tns-autoplay-timeout="10000" data-tns-controls="true" data-tns-nav="false" data-tns-items="1" data-tns-gutter="0" data-tns-responsive="{470: {items: 2}, 670: {items: 3, gutter: 15}, 992: {items: 5, gutter: 20}, 1300: {items: 6, gutter: 40}}" data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_app_header_slider_prev" data-tns-next-button="#kt_app_header_slider_next">
-													
+													<%- include('./partials/slider_small_commune.ejs', {i_communes: communes})  %>
 												</div>
 												<!--end::Slider-->
 											</div>
@@ -1036,13 +1036,13 @@
 										<div class="card-header align-items-center border-0 mt-3">
 											<h3 class="card-title align-items-start flex-column">
 												<span class="fw-bold text-gray-900 fs-3">Village</span>
-												<span class="text-gray-500 mt-2 fw-semibold fs-6"> villes avec moins de 2000 habitants</span>
+												<span class="text-gray-500 mt-2 fw-semibold fs-6"><%= nb_communes_village %> villes avec moins de 2000 habitants</span>
 											</h3>
 										</div>
 										<!--end::Header-->
 										<!--begin::Body-->
 										<div class="card-body pt-8">
-									
+											<%- include('./partials/widget_9_item.ejs', {i_communes: communes_village})  %>
 										</div>
 										<!--end::Body-->
 									</div>
@@ -1055,13 +1055,13 @@
 										<div class="card-header align-items-center border-0 mt-3">
 											<h3 class="card-title align-items-start flex-column">
 												<span class="fw-bold text-gray-900 fs-3">Hameau / Lieu-dit</span>
-												<span class="text-gray-500 mt-2 fw-semibold fs-6"> villes avec moins de 500 habitants</span>
+												<span class="text-gray-500 mt-2 fw-semibold fs-6"><%= nb_communes_tpv %> villes avec moins de 500 habitants</span>
 											</h3>
 										</div>
 										<!--end::Header-->
 										<!--begin::Body-->
 										<div class="card-body pt-8">
-				
+											<%- include('./partials/widget_9_item.ejs', {i_communes: communes_tpv})  %>
 										</div>
 										<!--end::Body-->
 									</div>

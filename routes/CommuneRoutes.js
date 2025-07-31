@@ -3,7 +3,7 @@ const CommuneController = require('../controllers/CommuneController')
 const router = express.Router();
 const {requireAuth} = require('../middleware/authMiddleware');
  
-  router.get('/',CommuneController.get_last_communes);
+  router.get('/test',CommuneController.get_last_communes);
 
   router.get('/ville/:cp/:nom',CommuneController.get_details);
 /*

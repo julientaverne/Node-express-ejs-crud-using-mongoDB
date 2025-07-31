@@ -34,7 +34,7 @@ const get_last_communes = async (req,res)=>{
 
       let nb_village = await Commune.countDocuments({ annee: 2025, population: { $gt: 500, $lte: 2000 } });
 
-      res.render('index',{title:'get_last_communes___index', communes : result_communes, communes_tpv: result_tpv, nb_communes_tpv: nb_tpv, communes_village: result_village, nb_communes_village: nb_village});
+      res.render('index3',{title:'get_last_communes___index', communes : result_communes, communes_tpv: result_tpv, nb_communes_tpv: nb_tpv, communes_village: result_village, nb_communes_village: nb_village});
   
     } catch (error) {
       console.log(error)
