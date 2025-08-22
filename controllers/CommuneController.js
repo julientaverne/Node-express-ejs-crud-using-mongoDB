@@ -49,7 +49,7 @@ const get_details = async (req,res)=>{
 
       let result = await Commune.findOne({ nom_standard: nom, annee: 2025, code_postal: cp })
 
-      res.render('commune_details',{title:'get_commune_details', commune: result});
+      res.render('commune_details',{title:'get_commune_details', commune: result,menu_accordion:'villes'});
   
     } catch (error) {
       console.log(error)
