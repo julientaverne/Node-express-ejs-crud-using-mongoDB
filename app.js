@@ -18,7 +18,9 @@ app.use(cookieParser());
 
 //connect to mangoDB
 
-const dbURI = 'mongodb://admin:bbaef5af5242f5a3206bc93bf83a69a480637b4e7fdc090d@46.101.22.107:27017/imo?authSource=admin';
+//const dbURI = 'mongodb://admin:bbaef5af5242f5a3206bc93bf83a69a480637b4e7fdc090d@46.101.22.107:27017/imo?authSource=admin';
+const dbURI = 'mongodb://admin:968911912af3881e7034847a41cae1d441579c1ce72468a8@165.245.209.248/pertinexa?authSource=admin';
+
 mangoose.set('strictQuery', true);
 mangoose.connect(dbURI,{useNewUrlParser:true, useUnifiedTopology:true })
 .then((result)=>console.log('Connected to the System -> http://localhost:3000/'))
