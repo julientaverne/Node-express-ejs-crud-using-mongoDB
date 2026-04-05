@@ -14,9 +14,9 @@ const HandleErrors = (err) =>{
          return errors;
    }
    console.log(err.message);
-   if(err.message == "Incorrect Email")
+   if(err.message == "Email non correct")
    {
-      errors.email = "Incorrect Email";
+      errors.email = "Email non correct";
    }
 
    if(err.message == "Incorrect Password")

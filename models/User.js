@@ -60,7 +60,7 @@ AuthSchema.statics.login = async function (email,password) {
       throw Error('Incorrect Password')
     }
     
-    throw Error('Incorrect Email');
+    throw Error('Email non correct');
 }
 
 const Auth = mongoose.model('user',AuthSchema);
