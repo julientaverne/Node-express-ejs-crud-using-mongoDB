@@ -46,6 +46,7 @@ const signup = (req,res) =>{
 }
 const signup_process = async (req,res)=>{
    const {name,email,username,password} = req.body;
+   console.log("email: ",email);
 
    try {
       const user = await Auth.create({name , email, username, password});
